@@ -1,0 +1,7 @@
+name: good local caller
+on:
+  push:
+    branches: [main]
+jobs:
+  call:
+    uses: ./.github/workflows/lib.yml
