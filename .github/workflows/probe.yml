@@ -1,0 +1,8 @@
+name: resolve probe
+on: workflow_dispatch
+jobs:
+  ok:
+    uses: AdobeDocs/commerce-contributor/.github/workflows/add-to-project_job.yml@main
+    with: {}
+    secrets:
+      COMMERCE_PROJECT_AUTOMATION: ${{ secrets.X }}
