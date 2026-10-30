@@ -1,0 +1,12 @@
+name: bad external caller
+on:
+  push:
+    branches: [main]
+jobs:
+  call:
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/validate-articles.yml@main
+    with:
+      debug: true
+    secrets:
+      SCCM_GITHUB_APP_ID: ${{ secrets.NOPE_A }}
+      ARTIFACTORY_TOKEN: ${{ secrets.NOPE_B }}
