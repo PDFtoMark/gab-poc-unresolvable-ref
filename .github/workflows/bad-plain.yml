@@ -1,0 +1,7 @@
+name: bad plain caller
+on:
+  push:
+    branches: [main]
+jobs:
+  call:
+    uses: Adobe-Enterprise-Docs/workflows/.github/workflows/validate-articles.yml@main
