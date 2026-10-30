@@ -1,0 +1,12 @@
+name: shared lib
+on:
+  workflow_call:
+    secrets:
+      TOKEN:
+        required: false
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    steps:
+      - name: proof
+        run: echo "reusable body executed"
